@@ -1,0 +1,12 @@
+* Ideas for formulating a high level bp language
+
+- syntax should be composed of "methods"/"functions", as this is a familiar idea to most (all?) modern programming
+- Ponylang separates the concepts of "behaviours" (public/communication methods) and functions (local/private methods) on actor objects.
+- arrow syntax is good. Seem it should be intuitive in the context of control flow / data flow
+  - is event-driven programimng about data flow, control flow? seems to be both interwoven
+- should be a good way to describe generic predicates that have concrete parameters plugged in at some later stage
+  - prolog is awesome, but the syntax doesnt make the "preicate" idea obvious to the casual reader
+- should not expose linearity of the BT scheduling
+  - the language user should be able to specify multiple requests
+  - the compiler should find conflicting requests and report them as an error
+  - actual scheduling should be an implementation detail
